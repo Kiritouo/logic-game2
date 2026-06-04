@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>任務排序推理遊戲</title>
 <style>
-  html { font-size: 18px; }
+  html { font-size: 22px; }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -72,8 +72,10 @@
   .card-title { font-size: 15px; font-weight: 500; color: var(--text-2); margin-bottom: .75rem; }
 
   .ref-img {
-    width: 100%; border-radius: var(--radius-md);
-    border: 0.5px solid var(--border); display: block;
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--border);
+    display: block;
     cursor: zoom-in;
     transition: transform .2s;
   }
@@ -129,8 +131,8 @@
   .task-card:active, .task-card.dragging { cursor: grabbing; transform: scale(.93); opacity: .4; }
   .task-card.selected { border-color: var(--blue-border); background: var(--blue-bg); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.1); }
   .task-card.drag-over { border-color: var(--blue-border); background: var(--blue-bg); }
-  .task-card .icon { font-size: 32px; margin-bottom: 6px; display: block; }
-  .task-card .name { font-size: 14px; color: var(--text); line-height: 1.4; }
+  .task-card .icon { font-size: 38px; margin-bottom: 8px; display: block; }
+  .task-card .name { font-size: 15px; color: var(--text); line-height: 1.4; }
 
   /* ── 步驟欄 ── */
   .slots-row {
@@ -146,7 +148,7 @@
   }
 
   .slot {
-    min-height: 108px;
+    min-height: 120px;
     border: 1.5px dashed var(--border-em);
     border-radius: var(--radius-lg);
     display: flex;
@@ -162,8 +164,8 @@
   .slot .step-num { position: absolute; top: 5px; left: 8px; font-size: 11px; color: var(--text-3); font-weight: 500; }
   .slot.has-card { border-style: solid; background: var(--surface); }
   .slot.drag-over, .slot.drop-target { border-color: var(--blue-border); background: var(--blue-bg); }
-  .slot .icon { font-size: 30px; margin-bottom: 4px; }
-  .slot .name { font-size: 13px; text-align: center; line-height: 1.3; padding: 0 4px; color: var(--text); }
+  .slot .icon { font-size: 36px; margin-bottom: 5px; }
+  .slot .name { font-size: 14px; text-align: center; line-height: 1.3; padding: 0 4px; color: var(--text); }
 
   .slot .remove-btn {
     position: absolute; top: 3px; right: 5px;

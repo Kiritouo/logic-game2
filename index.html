@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>任務排序推理遊戲</title>
 <style>
-  html { font-size: 22px; }
+  html { font-size: 20px; }
+  @media (max-width: 480px) { html { font-size: 22px; } }
+  @media (min-width: 481px) { html { font-size: 20px; } }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -182,8 +184,27 @@
   }
 
   @media (max-width: 480px) {
+    html { font-size: 18px; }
     .slots-row { grid-template-columns: repeat(3, 1fr); }
     .task-pool { grid-template-columns: repeat(3, 1fr); }
+    .task-card { padding: 1rem .6rem; }
+    .task-card .icon { font-size: 34px; }
+    .task-card .name { font-size: 15px; }
+    .slot { min-height: 110px; }
+    .slot .icon { font-size: 32px; }
+    .slot .name { font-size: 14px; }
+    .slot .step-num { font-size: 12px; }
+    .page-header h1 { font-size: 26px; }
+    .page-header p { font-size: 16px; }
+    .section-label { font-size: 16px; }
+    .card-title { font-size: 16px; }
+    .story-text, .story-dialogue { font-size: 16px; }
+    .rules-text { font-size: 16px; }
+    .rules-title { font-size: 16px; }
+    .result { font-size: 16px; }
+    button { font-size: 16px; padding: .65rem 1.3rem; }
+    .select-hint { font-size: 15px; }
+    .img-tap-hint { font-size: 15px; }
   }
 
   .slot {
